@@ -1,0 +1,8 @@
+model-service/checkpoints/*.pt
+model-service/data/*.nc
+model-service/test_payload.json
+model-service/predict_response.json
+**/__pycache__/
+*.pyc
+.env
+venv/
