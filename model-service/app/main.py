@@ -11,7 +11,7 @@ app = FastAPI(title="OceanEmbed Model Service")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # tighten this once you know your backend's real domain
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
