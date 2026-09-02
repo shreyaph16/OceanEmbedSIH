@@ -2,7 +2,7 @@ import xarray as xr
 import numpy as np
 import json
 
-surface = xr.open_dataset("model-service/data/surface_025_2022.nc")
+surface = xr.open_dataset("data/surface_025_2022.nc")
 
 so = np.nan_to_num(surface["so"].isel(time=0).values.squeeze(), nan=0.0)
 uo = np.nan_to_num(surface["uo"].isel(time=0).values.squeeze(), nan=0.0)
